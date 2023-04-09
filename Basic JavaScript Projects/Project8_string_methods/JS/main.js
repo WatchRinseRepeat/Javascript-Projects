@@ -29,17 +29,17 @@ function numberToString() { //function to report a number as string
     document.getElementById("toStr").innerHTML ="This is now a string: " + mathStr.toString(); //report as string
 }
 
-function beExact() {
+function beExact() { //function to show precision down to 4.
     var X = Math.PI;
     document.getElementById("showExact").innerHTML = X.toPrecision(4);
 }
 
-function beFixed() {
+function beFixed() { //function to show fixed number of spaces to 4.
     var X = Math.PI;
     document.getElementById("showFixed").innerHTML = X.toFixed(4);
 }
 
-function showValue() {
+function showValue() { //function to show the value of a variable.
     var words = "Hello, World!";
     var result = words.valueOf();
     document.getElementById("showVal").innerHTML = result;
