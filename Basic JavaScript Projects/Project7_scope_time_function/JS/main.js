@@ -12,7 +12,7 @@ function timeFunction() {  //included the else if statements into this function 
     }
     else if (d.getHours() < 12) { //check if in the am
         document.getElementById("TimeCheck").innerHTML = "Good Morning, it is " +
-            d.getHours + "am."
+            d.getHours() + "am."
     }
     else if (d.getHours() == 12) { //check if noon
         document.getElementById("TimeCheck").innerHTML = "Good Day, it is noon"
