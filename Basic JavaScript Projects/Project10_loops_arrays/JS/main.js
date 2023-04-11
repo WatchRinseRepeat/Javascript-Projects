@@ -1,16 +1,18 @@
 //while loop
 function Call_Loop() {
-    var x = 1; //starting point
-    let timing;
-    
+    let count = 0; //starting point
+    //let timing;
+
     function write() {
-        document.getElementById("Loop").innerHTML = x++;//write the number and increment
-        clearTimeout(timing); 
+        count++;
+        document.getElementById("Loop").innerHTML = count.toString();//write the number
+        //timing = setTimeout(write, 1000); //wait a second between iterations
+        //clearTimeout(timing);
     }
-    while (x < 11) { //count to 10
-        timing = setTimeout(write(), 1000); //wait a second between 
-    }; //for somereason the timing doesn't work. I've put in an email asking for 
-        //some guidence.
+    
+    while (count < 10) { //count to 10
+        write();
+    }; 
 };
 
 //Length property challenge
