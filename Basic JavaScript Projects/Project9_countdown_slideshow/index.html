@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Basic Java</title>
+        <meta charset="utf-8">
+        <meta name="author" content="WWR">
+        <link rel="stylesheet" href="./CSS/main.css">
+    </head>
+
+    <body>
+            <p>How many seconds would youo like to set your alarm for?</p>
+            <input id="seconds" value="" />
+            <button onclick="countdown()">Click Here</button>
+            <p id="timer"></p>
+            
+            <!--Slideshow-->
+            <div class="slideshow-container">
+                <!--Images with number and text-->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./images/car1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./images/car2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./images/car3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!--Next and Prev buttons-->
+                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+            </div>
+
+            <!--Dots and or circles-->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script src="JS/main.js"></script>
+    </body>
+
+</html>
