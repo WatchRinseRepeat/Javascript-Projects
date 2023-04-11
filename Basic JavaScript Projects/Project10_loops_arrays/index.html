@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Basic Java</title>
-    <meta charset="utf-8">
-    <meta name="author" content="WWR">
-    <script src="JS/main.js" defer></script>
-</head>
+    <head>
+        <title>Basic Java</title>
+        <meta charset="utf-8">
+        <meta name="author" content="WWR">
+        <script src="JS/main.js" defer></script>
+    </head>
 
-<body>
-    <!--While loops-->
-    <p>While Loops:</p>
-    <p id="Loop">Count to 10</p>
-    <button onclick="Call_Loop()">Click here to execute the loop.</button>
+    <body>
+        <!--While loops-->
+        <h5>While Loops:</h5>
+        <p id="Loop">Count to 10</p>
+        <button onclick="Call_Loop()">Click here to execute the loop.</button>
 
-    <!--String length property-->
-    <p>Counting string lenghts:</p>
-    <input id="str" type="text" placeholder="Enter your string" value="">
-    <button onclick="stringCounter()">Click to Count</button>
-    <p id="strLength"></p>
-</body>
+        <!--String length property-->
+        <h5>Counting string lenghts:</h5>
+        <input id="str" type="text" placeholder="Enter your string" value="">
+        <button onclick="stringCounter()">Click to Count</button>
+        <p id="strLength"></p>
 
+        <!--For loops-->
+        <h5>For Loops</h5>
+        <p id="List_of_Turtles">The Ninja Turtles are:</p>
+        <button onclick="for_Loop()">Click here.</button>
 
+        <!--Arrays-->
+        <h5>Arrays</h5>
+        <p id="Array"></p>
+        <input id="arrayIndex" type="text" placeholder="Enter a number 1-4">
+        <button onclick="array_Function()">Click Here</button>
 
+        <!--Const keyword-->
+        <h5>Const keyword</h5>
+        <p id="Constant"></p>
+        <p id="Constant2"></p>
+        <button onclick="constant_function()">Click Here!</button>
+        <button id="constantbtn" onclick="constant_function_2()">Click Here After!</button>
+
+        <!--let keyword-->
+        <h5>Let Keyword</h5>
+        <p id="letKey"></p>
+        <button onclick="letFunction()">What kind of tractor?</button>
+    </body>
 </html>
