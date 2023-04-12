@@ -41,7 +41,7 @@ function placeXOrO(squareNumber) {
             //disable clicking
             disableClick();
             //wait a second
-            setTimeout(function () { computersTurn(); 1000 });
+            setTimeout(function () { computersTurn() }, 1000 ); //fixed the tie issue
         };
         //Return True for computersTurn to work.
         return true;
