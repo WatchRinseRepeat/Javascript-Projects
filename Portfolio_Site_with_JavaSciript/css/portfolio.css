@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth; /*makes the page scroll smoothly when clicking the nav links*/
 }
 
+/*Body*/
 body {
     margin: 0%; /*Display all the way to the edge*/
     opacity: 1; /*for transition effect*/
@@ -42,7 +43,7 @@ h1:hover {
 }
 
 p {
-    font-family: Rockwell Extra Bold, Perpetua;
+    font-family: Perpetua, Rockwell Extra Bold;
     text-align: justify;
     letter-spacing: .1vw;
     font-size: 2.5vw;
@@ -132,6 +133,8 @@ footer {
     background-color: #f4f4f4;
     color: black;
     font-weight: bold;
+    cursor: pointer;
+    transition: .05s ease-in;
 }
 
 .navbar a:active {
@@ -267,7 +270,7 @@ footer {
 }
 
 @keyframes fade {
-    from {opacity: .4s;}
+    from {opacity: .4;}
     to {opacity: 1}
 }
 
@@ -281,7 +284,6 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    padding-top: 3%;
     height: 450px;
     background-color: #f2f2f2;
 }
@@ -290,7 +292,6 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    padding-top: 1.9%;
     height: 450px;
     background-color: #11077a;
 }
@@ -328,7 +329,7 @@ footer {
 }
 
 .form-popup {
-    z-index: 0;
+    z-index: 8;
     display: none;
     position: fixed;
     bottom: .5vw;
@@ -384,6 +385,7 @@ button:hover, .form-container .btn:hover {
     color: white;
     background-color: darkred;
     transition-duration: 1s;
+    -webkit-transition-duration: 1s;
     border-color: black;
 }
 
